@@ -7,15 +7,15 @@
   
   <title>组件及事件处理 | 张一洲的BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#嵌套盒式布局容器定义行形盒式容器，列形盒式容器，将布局方法设为流式布局（居中对齐，顺序排列），获得一个行形盒式容器（从左往右显示其组件），获得一个列形盒式容器（从上到下显示其组件），为第一个列式容器添加标签，为第二个列式容器设置宽度为10的单行文本框，将两个列式容器添加进行式容器，将行式容器添加进window中，box.createHorizontal&#x2F;VerticalStrut可以设置水平及垂">
+  <meta name="description" content="嵌套盒式布局容器定义行形盒式容器，列形盒式容器，将布局方法设为流式布局（居中对齐，顺序排列），获得一个行形盒式容器（从左往右显示其组件），获得一个列形盒式容器（从上到下显示其组件），为第一个列式容器添加标签，为第二个列式容器设置宽度为10的单行文本框，将两个列式容器添加进行式容器，将行式容器添加进window中，box.createHorizontal&#x2F;VerticalStrut可以设置水平及垂直">
 <meta property="og:type" content="article">
 <meta property="og:title" content="组件及事件处理">
 <meta property="og:url" content="http://yoursite.com/2020/05/23/%E7%BB%84%E4%BB%B6%E5%8F%8A%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86/index.html">
 <meta property="og:site_name" content="张一洲的BLOG">
-<meta property="og:description" content="#嵌套盒式布局容器定义行形盒式容器，列形盒式容器，将布局方法设为流式布局（居中对齐，顺序排列），获得一个行形盒式容器（从左往右显示其组件），获得一个列形盒式容器（从上到下显示其组件），为第一个列式容器添加标签，为第二个列式容器设置宽度为10的单行文本框，将两个列式容器添加进行式容器，将行式容器添加进window中，box.createHorizontal&#x2F;VerticalStrut可以设置水平及垂">
+<meta property="og:description" content="嵌套盒式布局容器定义行形盒式容器，列形盒式容器，将布局方法设为流式布局（居中对齐，顺序排列），获得一个行形盒式容器（从左往右显示其组件），获得一个列形盒式容器（从上到下显示其组件），为第一个列式容器添加标签，为第二个列式容器设置宽度为10的单行文本框，将两个列式容器添加进行式容器，将行式容器添加进window中，box.createHorizontal&#x2F;VerticalStrut可以设置水平及垂直">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-05-23T03:51:32.000Z">
-<meta property="article:modified_time" content="2020-05-23T04:20:44.100Z">
+<meta property="article:modified_time" content="2020-06-09T14:15:46.860Z">
 <meta property="article:author" content="张一洲">
 <meta name="twitter:card" content="summary">
   
@@ -92,7 +92,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#嵌套盒式布局容器<br>定义行形盒式容器，列形盒式容器，将布局方法设为流式布局（居中对齐，顺序排列），获得一个行形盒式容器（从左往右显示其组件），获得一个列形盒式容器（从上到下显示其组件），为第一个列式容器添加标签，为第二个列式容器设置宽度为10的单行文本框，将两个列式容器添加进行式容器，将行式容器添加进window中，box.createHorizontal/VerticalStrut可以设置水平及垂直支撑。<br>setvisible让创建好的对象显示出来，setdefaultcloseoperation设置用户在此窗体上发起close时执行的操作。setbounds设置组件位置和大小。settitle设置组件名字</p>
+        <h1 id="嵌套盒式布局容器"><a href="#嵌套盒式布局容器" class="headerlink" title="嵌套盒式布局容器"></a>嵌套盒式布局容器</h1><p>定义行形盒式容器，列形盒式容器，将布局方法设为流式布局（居中对齐，顺序排列），获得一个行形盒式容器（从左往右显示其组件），获得一个列形盒式容器（从上到下显示其组件），为第一个列式容器添加标签，为第二个列式容器设置宽度为10的单行文本框，将两个列式容器添加进行式容器，将行式容器添加进window中，box.createHorizontal/VerticalStrut可以设置水平及垂直支撑。<br>setvisible让创建好的对象显示出来，setdefaultcloseoperation设置用户在此窗体上发起close时执行的操作。setbounds设置组件位置和大小。settitle设置组件名字</p>
+<h1 id="处理鼠标事件"><a href="#处理鼠标事件" class="headerlink" title="处理鼠标事件"></a>处理鼠标事件</h1><p>implements实现接口<br>getsource获取鼠标发生事件的事件源<br>addmouselistener给当前的实例指定一个能处理鼠标事件的实例<br>instanceof关键字判断对象是否是特定类的实例，二元操作符<br>setlayout(new flowlayout())设置布局方式为居中对齐从左往右排列<br>e.getsource()发生鼠标事件的事件源<br>当多个事件源触发的事件由一个共同的监听器处理时通过getsource判断当前的事件源是哪一个组件<br>setVisible的位置决定了哪儿能看到</p>
+<h1 id="src"><a href="#src" class="headerlink" title="src"></a>src</h1><p>source 源文件</p>
+<h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><p>JAVA为了保证数据安全，只允许单继承</p>
 
       
     </div>
@@ -106,10 +109,19 @@
     
 <nav id="article-nav">
   
+    <a href="/2020/08/08/#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          #一级标题
+        
+      </div>
+    </a>
   
-    <a href="/2020/05/18/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
+  
+    <a href="/2020/03/28/%E5%90%91%E5%87%BD%E6%95%B0%E4%BC%A0%E9%80%92%E6%95%B0%E7%BB%84/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">微信小程序学习</div>
+      <div class="article-nav-title">名词解释</div>
     </a>
   
 </nav>
@@ -133,7 +145,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
     </div>
   </div>
 
@@ -146,11 +158,11 @@
       <ul>
         
           <li>
-            <a href="/2020/05/23/%E7%BB%84%E4%BB%B6%E5%8F%8A%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86/">组件及事件处理</a>
+            <a href="/2020/08/08/#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98/">#一级标题</a>
           </li>
         
           <li>
-            <a href="/2020/05/18/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0/">微信小程序学习</a>
+            <a href="/2020/05/23/%E7%BB%84%E4%BB%B6%E5%8F%8A%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86/">组件及事件处理</a>
           </li>
         
           <li>
